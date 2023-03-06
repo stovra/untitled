@@ -57,7 +57,7 @@ public class Elf extends Character {
         }
     }
     public boolean isAllowedHight(int number) {
-        if (number < this.minHeight && number > this.maxHeight) {
+        if (number < this.minHeight || number > this.maxHeight) {
             return false;
         } else return true;
     }
